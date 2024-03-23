@@ -1,0 +1,24 @@
+.navbar {
+    background-color: black !important;
+}
+
+.navbar li {
+    padding: 0px 20px;
+}
+
+.navbar li {
+    color: white !important;
+    font-weight: bold;
+}
+
+.navbar li a:hover {
+    opacity: 80%;
+}
+.navbar-nav {
+    margin: 0 auto; /* This will center the navbar items */
+    display: flex;
+    justify-content: center; /* This will horizontally center the navbar items */
+}
+.navbar-nav .nav-item {
+    padding: 0 20px;
+}

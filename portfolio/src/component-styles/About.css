@@ -1,0 +1,24 @@
+.about {
+    background-color: black;
+}
+
+.aboutTextPart {
+    display: flex;
+    align-items: center;
+}
+
+.download {
+    color: white;
+    background-color: blue;
+}
+
+.download:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid blue;
+}
+
+.aboutImagePart img {
+    max-width: 100%;
+    max-height: 100%;
+}

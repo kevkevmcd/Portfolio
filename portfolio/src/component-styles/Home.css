@@ -1,0 +1,35 @@
+.home {
+    background-color: rgb(49, 48, 48);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeTextPart {
+    display: flex;
+    text-align: center;
+}
+
+.homeTextPart h3 {
+    color: rgb(255, 255, 255) !important;
+}
+
+.icons a {
+    font-size: 20px;
+    padding: 0px 10px;
+}
+
+.icons a:hover {
+    opacity: 80%;
+}
+
+@media screen and (max-width: 768px) {
+    .home {
+        height: auto;
+    }
+    .homeTextPart {
+        text-align: center;
+        padding-top: 80px;
+    }
+}

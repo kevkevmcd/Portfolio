@@ -3,6 +3,7 @@ import "../component-styles/About.css";
 import AOS from 'aos';
 import "aos/dist/aos.css"
 import Picture from "../static/mypic.jpg";
+import { TypeAnimation } from 'react-type-animation';
 
 function About() {
     useEffect(() => {
@@ -18,32 +19,39 @@ function About() {
 
                     <div className="col-12 col-md-6 col-lg-6 aboutTextPart text-white" data-aos = "fade-left">
                         <div>
-                            <h3>
-                                Hello, my name is Kevin McDonald
-                            </h3>
+                            <h2>
+                                <TypeAnimation
+                                    sequence={[
+                                        `Academics`,
+                                        1000,
+                                    ]}
+                                    speed={10}
+                                    style={{ whiteSpace: 'pre-line', fontSize: '1em' }}
+                                    deletionSpeed={100000000000}
+                                />
+                            </h2>
 
                             <p>
-                                I am a software engineer. I went to uncc and studied computer science.
-                                Over the past 2 years I have been working at Newfold and I have gained a lot of 
-                                experience.
+                                I attended the University of North Carolina at Charlotte from 2018 - 2021. While there, I 
+                                majored in Computer Science with a concentration in A.I., Robotics, & Gaming and minored in
+                                Business!
                             </p>
+                            <br />
+                            <h2>
+                                <TypeAnimation
+                                    sequence={[
+                                        `Work Experience`,
+                                        1000,
+                                    ]}
+                                    speed={10}
+                                    style={{ whiteSpace: 'pre-line', fontSize: '1em' }}
+                                    deletionSpeed={100000000000}
+                                />
+                            </h2>
 
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td className="pe-5">Name</td>
-                                        <td>: Kevin McDonald</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="pe-5">Age</td>
-                                        <td>: 24</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="pe-5">Address</td>
-                                        <td>: Charlotte NC</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <p>
+                                Newfold Digital: Software Engineer II
+                            </p>
                             <button className="btn download mt-4">Download Resume</button>
                         </div>
                     </div>

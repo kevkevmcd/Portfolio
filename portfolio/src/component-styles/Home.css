@@ -1,5 +1,7 @@
 .home {
-    background-color: rgb(49, 48, 48);
+    background-image: url('../static/1Kte-ezgif.com-speed.gif');
+    background-size: cover;
+    background-position: center;
     height: 100vh;
     display: flex;
     justify-content: center;

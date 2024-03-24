@@ -1,5 +1,9 @@
 .about {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.986);
+}
+
+.title {
+    font-size: 2em;
 }
 
 .aboutTextPart {
@@ -19,6 +23,38 @@
 }
 
 .aboutImagePart img {
-    max-width: 80%;
+    max-width: 70%;
     max-height: auto;
 }
+
+.mySkills {
+    align-items: center;
+    bottom: 0;
+    color: #6e6e6e;
+    display: flex;
+    font-size: 1.7rem;
+    left: 0;
+    position: absolute;
+}
+
+.rounded-image {
+    border: 2px solid #007bff;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; 
+    transition: all 1s ease-in-out;
+    animation: morphBorder 8s ease-in-out infinite; 
+}
+
+@keyframes morphBorder {
+    0% {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      border-color: #6e6e6e; /* Initial border color */
+    }
+    50% {
+      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; /* Morph border radius */
+      border-color: #6e6e6e; /* New border color */
+    }
+    100% {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      border-color: #6e6e6e; /* Back to initial border color */
+    }
+  }

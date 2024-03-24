@@ -1,8 +1,9 @@
 import React from "react";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import { faGithub } from "@fortawesome/free-brands-svg-icons"; 
 import "../component-styles/Home.css"
 import { TypeAnimation } from 'react-type-animation';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"; 
+
 
 function Home() {
     return(
@@ -20,7 +21,7 @@ function Home() {
                             deletionSpeed={100000000000}
                         />
                     </h1>
-                    <h4>
+                    <h4 className="fadeIn">
                         Explore my website to learn a bit more about me!
                     </h4>
                 </div>

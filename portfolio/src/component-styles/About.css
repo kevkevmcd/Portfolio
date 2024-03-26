@@ -29,12 +29,14 @@
 
 .mySkills {
     align-items: center;
-    bottom: 0;
     color: #6e6e6e;
     display: flex;
     font-size: 1.7rem;
-    left: 0;
-    position: absolute;
+}
+
+.icon-container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .rounded-image {

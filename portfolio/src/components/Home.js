@@ -10,13 +10,13 @@ function Home() {
         <div className="w-100 home" id="home">
             <div className="homeTextPart text-white">
                 <div>
-                    <h1>
+                    <h1 className="mb-3">
                         <TypeAnimation
                             sequence={[
                                 `Hi!\nI'm Kevin McDonald`,
                                 1000,
                             ]}
-                            speed={10}
+                            speed={3}
                             style={{ whiteSpace: 'pre-line', fontSize: '2em' }}
                             deletionSpeed={100000000000}
                         />

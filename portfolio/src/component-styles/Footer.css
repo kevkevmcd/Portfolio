@@ -1,0 +1,27 @@
+.footer {
+    background-color: rgba(0, 0, 0, 0.986);
+}
+
+.footer div {
+    display: inline-block;
+  }
+  
+  .footer .email {
+    margin-left: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+.foot {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot-social {
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 1rem;
+}

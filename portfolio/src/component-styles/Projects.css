@@ -1,0 +1,10 @@
+.project {
+    background-color: rgba(0, 0, 0, 0.975);
+}
+
+.project-description {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 2em;
+    color: #6e6e6e;
+}

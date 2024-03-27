@@ -27,7 +27,7 @@ function Nav() {
                     <a className={`nav-link ${activeLink === 'about' ? 'active' : ''}`} href="#about" onClick={() => handleNavLinkClick('about')}>About</a>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link" href="#">Projects</a>
+                    <a className={`nav-link ${activeLink === 'projects' ? 'active' : ''}`} href="#projects" onClick={() => handleNavLinkClick('projects')}>Projects</a>
                     </li>
                 </ul>
                 </div>

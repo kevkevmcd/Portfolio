@@ -8,3 +8,25 @@
     padding: 0 2em;
     color: #6e6e6e;
 }
+
+.more-projects {
+    background-color: rgba(0, 0, 0, 0.795);
+}
+
+.project-description-indented {
+    margin-left: 1%;
+}
+
+.icon-link {
+    display: inline-flex;
+    align-items: center;
+  }
+  .icon-link > .bi {
+    margin-top: .125rem;
+    margin-left: .125rem;
+    transition: transform .25s ease-in-out;
+    fill: currentColor;
+  }
+  .icon-link:hover > .bi {
+    transform: translate(.25rem);
+  }

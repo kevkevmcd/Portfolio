@@ -18,6 +18,16 @@
     border: 1px solid blue;
 }
 
+.arrow-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-description-indented {
+    margin-left: 4%;
+}
+
 .aboutImagePart img {
     max-width: 70%;
     max-height: auto;

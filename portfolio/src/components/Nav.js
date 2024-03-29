@@ -33,22 +33,20 @@ function Nav() {
                 </div>
             </div>
             </nav>
-            <div className="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-            <div className="offcanvas-header">
-                <h5 className="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-                <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div className="offcanvas-body">
-                <div>
-                    <a className="nav-link active" aria-current="page" href="#">Home</a>
-                
-                    <a className="nav-link" href="#">About</a>
-              
-                    <a className="nav-link" href="#">Contact</a>
-           
-                    <a className="nav-link" href="#">Projects</a>
+            <div className="offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div className="offcanvas-header">
+                    <h5 className="offcanvas-title" id="offcanvasExampleLabel">KevinMcDonald.dev</h5>
+                    <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-            </div>
+                <div className="offcanvas-body">
+                    <div>
+                        <a className={`nav-link ${activeLink === 'home' ? 'active' : ''}`} href="#home" onClick={() => handleNavLinkClick('home')}>Home</a>
+                    
+                        <a className={`nav-link ${activeLink === 'about' ? 'active' : ''}`} href="#about" onClick={() => handleNavLinkClick('about')}>About</a>
+            
+                        <a className={`nav-link ${activeLink === 'projects' ? 'active' : ''}`} href="#projects" onClick={() => handleNavLinkClick('projects')}>Projects</a>
+                    </div>
+                </div>
             </div>
         </div>
     )

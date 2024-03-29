@@ -1,5 +1,12 @@
 .about {
     background-color: rgba(0, 0, 0, 0.986);
+    display: flex;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 107rem;
+    padding: 0 4rem;
 }
 
 .aboutTextPart {
@@ -40,9 +47,23 @@
     font-size: 1.7rem;
 }
 
+.mySkills p {
+    border-right: 2px solid #2b2b2b;
+    color: #6e6e6e;
+    font-weight: 600;
+    margin-right: 7rem;
+    padding-right: 3%;
+}
+
 .icon-container {
+    margin-right: 10px;
+}
+
+.icon-wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start; 
+    align-items: center; 
 }
 
 .rounded-image {

@@ -1,5 +1,6 @@
 .project {
     background-color: rgba(0, 0, 0, 0.975);
+    display: flex;
 }
 
 .project-description {

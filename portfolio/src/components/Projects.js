@@ -57,7 +57,7 @@ function Projects() {
                         <br />                          
                     </div>
                 </div>
-                <div className="row pt-5 text-center text-white mt-3" data-aos = "fade-up">
+                <div className="row pt-5 text-center text-white mt-3 mb-5" data-aos = "fade-up">
                     <div className="card text-white more-projects mt-2 pt-4 pb-4">
                         <h4>
                             More projects to come...

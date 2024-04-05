@@ -7,15 +7,26 @@ import '../component-styles/Nav.css';
 
 function Nav() {
     const [activeLink, setActiveLink] = useState('home');
+    const [isOffcanvasOpen, setIsOffcanvasOpen] = useState(false);
 
     const handleNavLinkClick = (link) => {
         setActiveLink(link);
+        setIsOffcanvasOpen(false);
+
+        const element = document.getElementById(link);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
+    const toggleOffcanvas = () => {
+        setIsOffcanvasOpen(!isOffcanvasOpen);
     };
     return(
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div className="container">
-                <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button className="navbar-toggler custom-toggler" type="button" onClick={toggleOffcanvas}>
                 <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -33,10 +44,10 @@ function Nav() {
                 </div>
             </div>
             </nav>
-            <div className="offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div className={`offcanvas offcanvas-start bg-dark text-white ${isOffcanvasOpen ? 'show' : ''}`} tabIndex="-1">
                 <div className="offcanvas-header">
                     <h5 className="offcanvas-title" id="offcanvasExampleLabel">KevinMcDonald.dev</h5>
-                    <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button type="button" className="btn-close" onClick={toggleOffcanvas}></button>
                 </div>
                 <div className="offcanvas-body">
                     <div>

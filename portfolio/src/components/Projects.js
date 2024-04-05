@@ -51,9 +51,7 @@ function Projects() {
                         </div>
                     </div>
                     <div className="col-12 col-md-6 col-lg-6 mb-4 center-text" data-aos = "fade-up-left">
-                        <div className="container mt-2">
-                            <ReactPlayer url={FPLDashDemo} height='100%' width='100%' controls={true}/>
-                        </div>
+                        <ReactPlayer url={FPLDashDemo} height='100%' width='100%' controls={true}/>
                         <br />                          
                     </div>
                 </div>

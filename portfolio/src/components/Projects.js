@@ -5,6 +5,7 @@ import "aos/dist/aos.css"
 import { TypeAnimation } from 'react-type-animation';
 import ReactPlayer from 'react-player';
 import FPLDashDemo from "../static/FPL-Dash-Demo.mp4";
+import FPLDashV2Demo from "../static/fpldashv2.mp4";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
@@ -39,11 +40,30 @@ function Projects() {
                                 so I decided to build out a dashboard website to better display the league data!
                                 <br />
                                 I chose to use Python to really take full advantage of libraries
-                                such as Pandas. When it came time to deploy/host the website, I also decided to use Docker to run it in a container.
+                                such as Pandas. When it came time to deploy the website, I decided to use Docker to run it in a container and Render.com.
                             </p>
-                            <p style={{ color: "#6e6e6e"}}>League Code: 507</p>
-                            <a href="https://fpl-dashboard-zyxb.onrender.com/" className="icon-link">
-                                https://fpl-dashboard-zyxb.onrender.com/
+                            <p style={{ color: "#6e6e6e"}}>This website is no longer published.</p>
+                        </div>
+                    </div>
+                    <div className="col-12 col-md-6 col-lg-6 mb-4 center-text" data-aos = "fade-up-left">
+                        <ReactPlayer url={FPLDashDemo} height='100%' width='100%' controls={true}/>
+                        <br />                          
+                    </div>
+                </div>
+                <div className="row pt-5">
+                    <div className="col-12 col-md-6 col-lg-6 aboutTextPart text-white" data-aos = "fade-up-right">
+                        <div>
+                            <h2>FPL-Dashboard V2</h2>
+                            <hr />
+                            <p className="project-description-indented ">
+                                Similar to the first iteration, this website was developed to be a Fantasy Premier League dashboard except this time just done better! For the FPL-Dashboard V2 I wanted
+                                it to be more interactive, useful, and most importantly have better performance. To do this I decided to utilize Fast Api for the backend to take advantage of it's async
+                                capabilites. Then I used React and MUI to make an interface to meet the goal of being more interactive. 
+                                <br />
+                                This website is still a work in progress and I plan to continue to add to it in iterations. Feel free to check it out with the link below:
+                            </p>
+                            <a href="https://www.fpl-dashboard.com/" className="icon-link">
+                                https://fpl-dashboard.com/
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-chevron-right" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
                                 </svg>
@@ -51,8 +71,20 @@ function Projects() {
                         </div>
                     </div>
                     <div className="col-12 col-md-6 col-lg-6 mb-4 center-text" data-aos = "fade-up-left">
-                        <ReactPlayer url={FPLDashDemo} height='100%' width='100%' controls={true}/>
+                        <ReactPlayer url={FPLDashV2Demo} height='100%' width='100%' controls={true}/>
                         <br />                          
+                    </div>
+                </div>
+                <div className="row pt-5">
+                    <div className="col-12 col-md-6 col-lg-6 aboutTextPart text-white" data-aos = "fade-up-right">
+                        <div>
+                            <h2>FPL A.I. Agent??</h2>
+                            <hr />
+                            <p className="project-description-indented ">
+                                This project is still in the planning process, but I would like to use the power of CrewAI to create a multi-agent system that
+                                offers analysis and insights tailored to our fantasy league. More to come on this...
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div className="row pt-5 text-center text-white mt-3 mb-5" data-aos = "fade-up">

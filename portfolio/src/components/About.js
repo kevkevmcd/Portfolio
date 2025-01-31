@@ -118,7 +118,7 @@ function About() {
                                 <h5>Newfold Digital</h5>
                             </div>
                             <p className="about-description-indented">
-                                - Software Engineer II ( Apr 2023 - present)
+                                - Software Engineer ( Apr 2023 - present)
                             </p>
                             <p className="about-description-indented">
                                 - Associate Software Engineer (2022 - 2023)

@@ -75,18 +75,6 @@ function Projects() {
                         <br />                          
                     </div>
                 </div>
-                <div className="row pt-5">
-                    <div className="col-12 col-md-6 col-lg-6 aboutTextPart text-white" data-aos = "fade-up-right">
-                        <div>
-                            <h2>FPL A.I. Agent??</h2>
-                            <hr />
-                            <p className="project-description-indented ">
-                                This project is still in the planning process, but I would like to use the power of CrewAI to create a multi-agent system that
-                                offers analysis and insights tailored to our fantasy league. More to come on this...
-                            </p>
-                        </div>
-                    </div>
-                </div>
                 <div className="row pt-5 text-center text-white mt-3 mb-5" data-aos = "fade-up">
                     <div className="card text-white more-projects mt-2 pt-4 pb-4">
                         <h4>

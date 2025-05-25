@@ -5,7 +5,7 @@ import "aos/dist/aos.css"
 import { TypeAnimation } from 'react-type-animation';
 import ReactPlayer from 'react-player';
 import FPLDashDemo from "../static/FPL-Dash-Demo.mp4";
-import FPLDashV2Demo from "../static/fpldashv2.mp4";
+import FPLDashV2Demo from "../static/fplv2Demo.mp4";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
